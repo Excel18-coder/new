@@ -80,6 +80,7 @@ section{
     align-items: center;
     justify-content: center;
     gap: 15rem;
+    flex-direction: row-reverse; /* Added this line */
 }
 .home-content{
     display: flex;
@@ -675,4 +676,17 @@ span{
     grid-template-columns: repeat(1,1fr);
 }
     }
+@media (max-width: 600px) {
+    .service-info h4 {
+        font-size: 2rem; /* Adjusted font size */
+    }
+    .service-info p {
+        font-size: 1.4rem; /* Adjusted font size */
+        padding: 1rem; /* Adjusted padding */
+    }
+    .services-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 1rem; /* Adjusted gap */
+    }
+}
 
